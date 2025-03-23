@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <HEAD>
+        <title>JobBliss</title>
+        <link rel="icon" type="image/x-icon" href= ""th:href="@{/Project/image/icon.png}">
+        <link rel="stylesheet" type="text/css" href= ""th:href="@{/Project/index copy.css}">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </HEAD>
+    <HEADER>
+        <div class="header-container">
+         
+            <nav class="navbar">
+                
+                    <a href="index">Home</a>
+                    <a href="aboutus">About US</a>
+                    <a href="features">Features</a>
+                    <a href="loginsignup"  class="active" >Login/Signup</a>
+            </nav>
+           
+        </div>
+    </HEADER>
+    <section CLASS="Home">
+        <div class="home-img">
+            <img src="/Project/image/logo.png" alt="home image">
+        </div>
+        <div class="home-content">
+            <h1 style="color: #7f5539;">Welcome Back!!</h1><br><br> 
+            <p style="font-size: 1.5rem; color: #7f5539;">Choose your account type.</p>
+            <button><a href="/companylogin">For Company Account</a></button><br><br><br>
+            <button><a href="/seekerslogin">For Job Seeker's Account ></a></button>
+            
+            
+        </div>
+       
+       
+            
+        
+
+
+    </section>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Job list</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+       
+
+</head>
+<body>
+
+<th:block th:insert="Home.html">
+</th:block>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header bg-primary text-center text-white">
+            <h5>Job List</h5>
+        </div>
+
+        <div class="card-body"> 
+            
+            <!-- Search Bar -->
+            <!-- <form method="get" action="/search">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="keyword" placeholder="Search jobs...">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </form> -->
+
+            <table class="table table-striped" id="myTable"> 
+                <thead> 
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Location</th>
+                        <th>Job Description</th>
+                        <th>Required Qualifications</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr th:each="p: ${pList}">
+                        <td>[[${p.title}]]</td>
+                        <td>[[${p.location}]]</td>
+                        <td>[[${p.description}]]</td>
+                        <td>[[${p.qualifications}]]</td>
+                        <td>
+                            <a th:href="@{/job/apply(title=${p.title})}" class="btn btn-success">Apply</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card-footer bg-warning text-center">
+            copyright@2024
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
+
+</body>
+</html>

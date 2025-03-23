@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+	  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px ;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99; 
+    height: 10%;
+	
+}

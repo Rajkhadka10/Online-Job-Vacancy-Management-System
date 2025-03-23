@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help and Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            font-size: 18px;
+            color: #555;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .phone-number {
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <th:block th:insert="Home.html"></th:block>
+    <div class="container">
+        <h1>Help & Support</h1>
+        <p>If you need assistance, feel free to contact us.</p>
+        <div class="contact-info">
+            <p><strong>Location:</strong> Kalanki, Nepal</p>
+            <p><strong>Email:</strong> <a href="mailto:jobblissnepal@gmail.com">jobblissnepal@gmail.com</a></p>
+            <p><strong>Phone:</strong> <span class="phone-number">9828556179, 9763445768</span></p>
+        </div>
+    </div>
+</body>
+</html>
