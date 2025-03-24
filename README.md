@@ -16,36 +16,9 @@ The **Online Job Vacancy Management System** is a web-based platform designed to
 ✅ **Manage Applications** – View applicant details and track hiring progress.  
 ✅ **Dashboard** – Manage published jobs and received applications.  
 
-## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/Rajkhadka10/Online-Job-Vacancy-Management-System.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd Online-Job-Vacancy-Management-System
-   ```
-3. Install dependencies:
-   ```sh
-   mvn clean install  # If using Maven
-   ```
-4. Run the application:
-   ```sh
-   mvn spring-boot:run  # If using Spring Boot
-   ```
-5. Access the application in your browser:
-   ```
-   http://localhost:8080
-   ```
-
 ## Technologies Used
 - **Java (Spring Boot)** – Backend development.
 - **HTML, CSS, JavaScript** – Frontend design.
 - **MySQL** – Database management.
 - **Thymeleaf** – Templating engine for views.
 
-## Contributing
-Feel free to fork the repository and submit pull requests for improvements.
-
-## License
-This project is open-source under the [MIT License](LICENSE).
